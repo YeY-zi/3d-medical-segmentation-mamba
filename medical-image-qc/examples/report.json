@@ -1,0 +1,962 @@
+{
+  "schema_version": 1,
+  "expected_modalities": [
+    "t1",
+    "t1ce",
+    "t2",
+    "flair"
+  ],
+  "summary": {
+    "pass": 1,
+    "warn": 1,
+    "fail": 3
+  },
+  "cases": [
+    {
+      "id": "healthy_input",
+      "images": {
+        "flair": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1ce": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t2": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "errors": [],
+      "warnings": [],
+      "status": "pass"
+    },
+    {
+      "id": "missing_flair",
+      "images": {
+        "t1": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1ce": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t2": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "errors": [
+        "missing_modality:flair"
+      ],
+      "warnings": [],
+      "status": "fail"
+    },
+    {
+      "id": "shifted_geometry",
+      "images": {
+        "flair": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1ce": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t2": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              5.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "errors": [
+        "affine_mismatch:t2:t1"
+      ],
+      "warnings": [],
+      "status": "fail"
+    },
+    {
+      "id": "nonfinite_data",
+      "images": {
+        "flair": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 0.9994047619047619,
+          "errors": [
+            "nonfinite_voxels"
+          ],
+          "warnings": []
+        },
+        "t1ce": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t2": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "errors": [
+        "t1:nonfinite_voxels"
+      ],
+      "warnings": [],
+      "status": "fail"
+    },
+    {
+      "id": "constant_image",
+      "images": {
+        "flair": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t1": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": [
+            "constant_intensity"
+          ]
+        },
+        "t1ce": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        },
+        "t2": {
+          "shape": [
+            12,
+            14,
+            10
+          ],
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "orientation": [
+            "R",
+            "A",
+            "S"
+          ],
+          "spatial_unit": "mm",
+          "affine": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "finite_fraction": 1.0,
+          "errors": [],
+          "warnings": []
+        }
+      },
+      "errors": [],
+      "warnings": [
+        "t1:constant_intensity"
+      ],
+      "status": "warn"
+    }
+  ],
+  "limitations": "Structural input audit only. A pass does not establish anatomical alignment, diagnostic quality, or model accuracy."
+}

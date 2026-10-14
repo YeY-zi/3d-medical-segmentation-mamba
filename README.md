@@ -1,3 +1,15 @@
+# Medical imaging learning projects
+
+## Runnable project
+
+[Medical Image QC](medical-image-qc/README.md) is a CPU-only NIfTI quality-audit tool with synthetic examples, JSON/HTML reports and 15 local automated checks. Created in October 2026 with AI coding assistance; see the project README for scope, attribution and limitations.
+
+## SegMamba reference material
+
+The original README retained below is reference material from [ge-xing/SegMamba](https://github.com/ge-xing/SegMamba). Its model claims, contact information and installation commands refer to the original authors and repository. The full SegMamba implementation and training results are not included here. The new QC tool above is a separate educational project.
+
+---
+
 # SegMamba
 
 **Recent news: If you are interested in the research about vision language models, please refers to the latest work: https://github.com/MrGiovanni/RadGPT (ICCV2025)**
